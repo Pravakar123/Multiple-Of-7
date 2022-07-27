@@ -1,2 +1,14 @@
-# Multiple-Of-7
-Take an integer N as input, and print all the multiples of 7 till N(inclusive).  Input Format  Single line Input  An integer value Constraints  0&lt;=N&lt;=10000  Output Format  Single line Output  Integer values (All multiples of 7) Sample Input 0  98 Sample Output 0  0 7 14 21 28 35 42 49 56 63 70 77 84 91 98
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s=new Scanner(System.in);
+        int N=s.nextInt();
+        for(int num=0;num<=N;num++)
+            if(num%7==0)
+                System.out.print(num+" ");
+    }
+}
